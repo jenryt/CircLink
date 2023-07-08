@@ -13,14 +13,11 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       validate: {
-        validate: {
-          validator: function (value) {
-            const emailRegex =
-              /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            return emailRegex.test(value);
-          },
-          message: "Please enter a valid email address",
+        validator: function (value) {
+          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          return emailRegex.test(value);
         },
+        message: "Please enter a valid email address",
       },
     },
     thoughts: [
