@@ -38,7 +38,7 @@ connectDB().then(async () => {
     const newThought = new Thought({
       thoughtText: getRandomThought(),
       createdAt: getRandomDate(),
-      username: randomUser._id,
+      username: randomUser.username,
       reactions: getRandomReaction(),
     });
 
