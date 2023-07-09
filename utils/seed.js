@@ -51,22 +51,6 @@ connectDB().then(async () => {
 
   console.log("anchor", users);
 
-  //   for (let i = 0; i < users.length; i++) {
-  //     const currentUser = users[i];
-  //     const friendsCount = Math.floor(Math.random() * users.length);
-
-  //     for (let j = 0; j < friendsCount; j++) {
-  //       const randomUser = getRandomArrItem(users);
-  //       if (
-  //         randomUser._id !== currentUser._id &&
-  //         !currentUser.friends.includes(randomUser._id)
-  //       ) {
-  //         currentUser.friends.push(randomUser._id);
-  //         await currentUser.save();
-  //       }
-  //     }
-  //   }
-
   for (let i = 0; i < users.length; i++) {
     const currentUser = users[i];
     const friendsCount = Math.floor(Math.random() * (users.length - 1));
