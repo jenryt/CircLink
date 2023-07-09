@@ -50,6 +50,7 @@ OpenAI<br>
 MongoDB at https://www.mongodb.com<br>
 License Badge created by shields.io<br>
 License links provide by opensource.org<br>
+seed and data by UCB coding bootcamp week_18: 21 <br>
 
 ## Tests
 
