@@ -27,12 +27,13 @@ Empower your social networking application with CircLink, leveraging its intuiti
 
 ## Usage
 
-1. Starting the by entering npm start or node server.js at the root folder.
-2. Using your preferred API platform such as Postman, Insomnia, etc, perform CRUD operations on the following endpoints: users, friends, thoughts, and reactions.
-3. Ensure to provide the correct wildcard keys (or route parameters) when making requests.
+1. Optional: running npm run seed to seed the data.
+2. Starting the by entering npm start or node server.js at the root folder.
+3. Using your preferred API platform such as Postman, Insomnia, etc, perform CRUD operations on the following endpoints: users, friends, thoughts, and reactions.
+4. Ensure to provide the correct wildcard keys (or route parameters) when making requests.
 
 Please find attached demo video showcasing the installation and functionality of our application.<br>
-https://watch.screencastify.com/v/YKdcsNukYx2QJynZoDWh <br>
+https://drive.google.com/file/d/1OjEUl0tVQ30RhTnSRv51bwHDEAKs98lS/view <br>
 
 ![application demo image GET all users](./assets/images/GET_allUser.png)
 ![application demo image GET all thoughts](./assets/images/GET_allThoughts.png)
