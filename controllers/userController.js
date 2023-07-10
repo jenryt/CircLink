@@ -155,11 +155,12 @@ const deleteFriend = async (req, res) => {
       return res.status(400).json({ message: "No user with this ID!" });
     }
 
-    const user = await User.findByIdAndUpdate(
-      req.params.userId,
-      { $pull: { friends: req.params.friendId } },
-      { new: true }
-    );
+    // const user = await User.findByIdAndUpdate(
+    //   req.params.userId,
+    //   { $pull: { friends: req.params.friendId } },
+    //   { new: true }
+    // );
+    const user = await User.findById(req.params.userId);
     if (!user) {
       return res.status(404).json({ message: "No user with this ID!" });
     }
@@ -170,6 +171,8 @@ const deleteFriend = async (req, res) => {
     }
 
     // check if friendId exists in user friend list
+    console.log(user);
+    console.log(user.friends);
     const friended = user.friends.includes(req.params.friendId);
     if (!friended) {
       return res.status(400).json({
@@ -177,8 +180,15 @@ const deleteFriend = async (req, res) => {
       });
     }
 
+    const updatedUser = await User.findByIdAndUpdate(
+      req.params.userId,
+      { $pull: { friends: req.params.friendId } },
+      { new: true }
+    );
+
     res.status(200).json({
       message: `${friend.username} has been deleted from your friend list!`,
+      user: updatedUser,
     });
   } catch (error) {
     console.log(error);

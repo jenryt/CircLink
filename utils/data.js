@@ -175,17 +175,6 @@ const getRandomEmail = () => {
   return `${randomString}@${domain}`;
 };
 
-// const getRandomReaction = (count = Math.floor(Math.random() * 7)) => {
-//   const reactions = [];
-//   for (let i = 0; i < count; i++) {
-//     reactions.push({
-//       reactionBody: getRandomArrItem(reactionData),
-//       username: getRandomUsername(),
-//       createdAt: getRandomDate(),
-//     });
-//   }
-//   return reactions;
-// };
 const getRandomReaction = (count) => {
   const reactions = [];
   const reactionCount =
