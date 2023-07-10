@@ -36,9 +36,10 @@ const createThought = async (req, res) => {
     // push the created thought's _id to the associated user's thoughts array
     user.thoughts.push(newThought._id);
     await user.save();
-    res
-      .status(200)
-      .json({ message: "Your new thought has been sucessfully posted!" });
+    res.status(200).json({
+      message: "Your new thought has been sucessfully posted!",
+      thought: newThought,
+    });
   } catch (error) {
     res.status(500).json(error);
   }
@@ -98,9 +99,10 @@ const addReaction = async (req, res) => {
     if (!thought) {
       return res.status(404).json({ message: "No thought found with this ID" });
     }
-    res
-      .status(200)
-      .json({ message: "Your reaction has been sucessfully posted!" });
+    res.status(200).json({
+      message: "Your reaction has been sucessfully posted!",
+      thought: thought,
+    });
   } catch (error) {
     res.status(500).json(error);
   }
@@ -117,9 +119,10 @@ const deleteReaction = async (req, res) => {
     if (!thought) {
       return res.status(404).json({ message: "No thought found with this ID" });
     }
-    res
-      .status(200)
-      .json({ message: "Your reaction has been sucessfully deleted!" });
+    res.status(200).json({
+      message: "Your reaction has been sucessfully deleted!",
+      thought: thought,
+    });
   } catch (error) {
     res.status(500).json(error);
   }
