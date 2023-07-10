@@ -27,7 +27,7 @@ Empower your social networking application with CircLink, leveraging its intuiti
 
 ## Usage
 
-1. [Optional]: running `npm run seed` to seed the data.
+1. Optional: running `npm run seed` to seed the data.
 2. Starting the by entering `npm start` or `node server.js` at the root folder.
 3. Using your preferred API platform such as Postman, Insomnia, etc, perform CRUD operations on the following endpoints: users, friends, thoughts, and reactions.
 4. Ensure to provide the correct wildcard keys (or route parameters) when making requests.
