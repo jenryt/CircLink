@@ -39,7 +39,7 @@ connectDB().then(async () => {
       thoughtText: getRandomThought(),
       createdAt: getRandomDate(),
       username: randomUser.username,
-      reactions: getRandomReaction(),
+      reactions: getRandomReaction(randomUser.username),
     });
 
     thoughts.push(newThought);
@@ -71,10 +71,10 @@ connectDB().then(async () => {
   }
 
   console.log("Users:");
-  console.table(users);
+  // console.table(users.map((user) => user.toObject())); // Convert Mongoose documents to plain objects
 
   console.log("Thoughts:");
-  console.table(thoughts);
+  // console.table(thoughts.map((thought) => thought.toObject())); // Convert Mongoose documents to plain objects
 
   console.timeEnd("seeding complete 🌱");
   process.exit(0);

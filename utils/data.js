@@ -159,9 +159,9 @@ const getRandomDate = () => {
 // };
 
 const getRandomUsername = () => {
-  if (usernameData.length === 0) {
-    throw new Error("No more available usernames.");
-  }
+  // if (usernameData.length === 0) {
+  //   throw new Error("No more available usernames.");
+  // }
 
   const randomIndex = Math.floor(Math.random() * usernameData.length);
   const randomUsername = usernameData.splice(randomIndex, 1)[0];

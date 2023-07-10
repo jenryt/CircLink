@@ -33,11 +33,17 @@ Empower your social networking application with CircLink, leveraging its intuiti
 
 Please find attached demo video showcasing the installation and functionality of our application.<br>
 https://watch.screencastify.com/v/YKdcsNukYx2QJynZoDWh <br>
-![application demo image Categories GET all](./assets/images/)
-![application demo image Categories GET by id](./assets/images/)
-![application demo image Products POST](./assets/images/)
-![application demo image Products PUT](./assets/images/)
-![application demo image Tags DELETE](./assets/images/)
+
+![application demo image GET all users](./assets/images/GET_allUser.png)
+![application demo image GET all thoughts](./assets/images/GET_allThoughts.png)
+![application demo image GET single thought by id](./assets/images/GET_singleThought.png)
+![application demo image POST to add new friend](./assets/images/POST_addNewFriend.png)
+![application demo image POST to create new thought](./assets/images/POST_createNewThought.png)
+![application demo image POST to create new reaction](./assets/images/POST_createNewReaction.png)
+![application demo image PUT to update a thought](./assets/images/PUT_updateThought.png)
+![application demo image PUT to update a user](./assets/images/PUT_updateUser.png)
+![application demo image DELETE a thought](./assets/images/DELETE_thought.png)
+![application demo image DELETE a user](./assets/images/DELETE_user.png)
 
 ## License
 
