@@ -21,7 +21,7 @@ Empower your social networking application with CircLink, leveraging its intuiti
 
 1. Clone or download the repository to your device.
 2. Install node.js v18.15.0
-3. Install the necessary package by typing npm i in the command line
+3. Install the necessary package by typing `npm i` in the command line
 4. Setup environment veriables by create a .env file and provide following: MONGODB="". Replace the empty quotes ("") with the appropriate values for your MongoDB database configuration.
 5. Using API development platform such as Postman, Insomnia, etc... or curl to interact with the application's API endpoints.
 
